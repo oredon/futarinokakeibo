@@ -2,7 +2,7 @@
 思い出と共に出費も積み重ねよう。同棲、新婚、ルームシェア。楽しいお二人様暮らしの支出記録WEBアプリ。
 
 ## DEMO
-http://oredon.kidukilab.com/kakeibo/
+http://oredon.guitarkouza.net/kakeibo
 * ID: admin
 * Password: admin
 
@@ -28,13 +28,6 @@ MySQLとSQLite用にテストデータをダンプしたファイルを同梱し
 
 ## Install
 DocumentRoot直下にkakeiboディレクトリをアップし、cakePHPの設置同様tmpやcacheディレクトリにapache書き込み権限を与えます。あとはDBの作成をtest db dump file.を参考に作成してください。
-
-## ユーザの追加、パスワード変更
-http://oredon.kidukilab.com/kakeibo/users/add
-
-http://oredon.kidukilab.com/kakeibo/users/edit/{id}
-
-のように、usersコントローラのadd,editアクションを利用します。
 
 ## フロントエンド開発について
 react + redux + material-uiのコンパイルにはwebpack + babel(es2015)を使っています。
@@ -99,10 +92,10 @@ webpack
 -----------------------------
 
 ### 制作
-oredon(Taisuke)
+oredon
 
 #### WEBサイト
-[http://oredon.kidukilab.com/](http://oredon.kidukilab.com/)
+[http://oredon.guitarkouza.net/](http://oredon.guitarkouza.net/)
 
 #### twitter
 [https://twitter.com/oredon_taisuke](https://twitter.com/oredon_taisuke)
@@ -110,11 +103,11 @@ oredon(Taisuke)
 :::::::::::::::::
 
 #### HTML5 で3Dゲーム作りました
-[http://is.kidukilab.com/](http://is.kidukilab.com/)
+[http://is.guitarkouza.net/](http://is.guitarkouza.net/)
 
 :::::::::::::::::
 
 #### HTML5 で2Dゲーム作りました
-[http://oredon.kidukilab.com/](http://oredon.kidukilab.com/)
+[http://oredon.guitarkouza.net/](http://oredon.guitarkouza.net/)
 
 :::::::::::::::::
