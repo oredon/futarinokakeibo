@@ -78,15 +78,15 @@ class DetailTable extends Component {
 }
 
 DetailTable.propTypes = {
-	monthly: PropTypes.shape({
-		data: PropTypes.object,
-		isPosting: PropTypes.bool.isRequired,
-		isPostSuccess: PropTypes.bool.isRequired,
-		isPostError: PropTypes.bool.isRequired,
-		startYear: PropTypes.any.isRequired,
-		startMonth: PropTypes.any.isRequired,
-		startDate: PropTypes.any.isRequired
-	}),
+  monthly: PropTypes.shape({
+    data: PropTypes.object,
+    isPosting: PropTypes.bool.isRequired,
+    isPostSuccess: PropTypes.bool.isRequired,
+    isPostError: PropTypes.bool.isRequired,
+    startYear: PropTypes.any.isRequired,
+    startMonth: PropTypes.any.isRequired,
+    startDate: PropTypes.any.isRequired
+  }),
   del: PropTypes.shape({
     isDel: PropTypes.bool.isRequired,
     isDelSuccess: PropTypes.bool.isRequired,

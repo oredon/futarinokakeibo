@@ -2,35 +2,35 @@ import React, { PropTypes, Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
 
 let circleChartConfigTmpl = {
-	chart: {
+  chart: {
     type: 'pie'
-	},
-	title: {
+  },
+  title: {
     text: 'カテゴリー別出費比率'
-	},
-	tooltip: {
+  },
+  tooltip: {
     pointFormat: ' <b>{point.percentage:.1f}%</b> ({point.y}円)'
   },
-	subtitle: {
+  subtitle: {
     text: '累計額: '+ 1 +"円"
-	},
-	plotOptions: {
+  },
+  plotOptions: {
     pie: {
       innerSize: 100,
       depth: 45
     }
-	},
-	series: [{
+  },
+  series: [{
     name: '出費率',
     data: []
-	}]
+  }]
 }
 
 class CircleChart extends Component {
-	/**
-	 * AJAXデータをコンフィグにセット
-	 * @param  {object} res AJAXで取得したグラフデータ
-	 */
+  /**
+   * AJAXデータをコンフィグにセット
+   * @param  {object} res AJAXで取得したグラフデータ
+   */
   mergeByPropMonthlyData(res){
     let detailArr = [];
     let idx;
@@ -39,7 +39,7 @@ class CircleChart extends Component {
     }
     circleChartConfigTmpl.subtitle = {
       text: '累計額: '+ this.props.monthly.data.sum +"円"
-  	}
+    }
     circleChartConfigTmpl.series[0] = {
       name: '出費率',
       data: detailArr
@@ -47,7 +47,7 @@ class CircleChart extends Component {
   }
 
   render() {
-		// 描画の直前にグラフデータの更新
+    // 描画の直前にグラフデータの更新
     if(this.props.monthly.data){
       this.mergeByPropMonthlyData(this.props.monthly.data);
     }
@@ -60,15 +60,15 @@ class CircleChart extends Component {
 }
 
 CircleChart.propTypes = {
-	monthly: PropTypes.shape({
-		data: PropTypes.object,
-		isPosting: PropTypes.bool.isRequired,
-		isPostSuccess: PropTypes.bool.isRequired,
-		isPostError: PropTypes.bool.isRequired,
-		startYear: PropTypes.any.isRequired,
-		startMonth: PropTypes.any.isRequired,
-		startDate: PropTypes.any.isRequired
-	})
+  monthly: PropTypes.shape({
+    data: PropTypes.object,
+    isPosting: PropTypes.bool.isRequired,
+    isPostSuccess: PropTypes.bool.isRequired,
+    isPostError: PropTypes.bool.isRequired,
+    startYear: PropTypes.any.isRequired,
+    startMonth: PropTypes.any.isRequired,
+    startDate: PropTypes.any.isRequired
+  })
 };
 
 export default CircleChart;

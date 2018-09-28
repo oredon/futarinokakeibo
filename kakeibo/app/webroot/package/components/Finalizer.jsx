@@ -89,20 +89,20 @@ Finalizer.propTypes = {
   actionsEdit: PropTypes.shape({
     finalizeSend: PropTypes.func,
     getData: PropTypes.func,
-    sendData: PropTypes.func,
+    sendData: PropTypes.func
   }),
-	monthly: PropTypes.shape({
-		data: PropTypes.object,
-		isPosting: PropTypes.bool,
-		isPostSuccess: PropTypes.bool,
-		isPostError: PropTypes.bool,
-		startYear: PropTypes.any,
-		startMonth: PropTypes.any,
-		startDate: PropTypes.any
-	}),
-	actionsMonthly: PropTypes.shape({
-		fetchMonthlyData: PropTypes.func
-	}),
+  monthly: PropTypes.shape({
+    data: PropTypes.object,
+    isPosting: PropTypes.bool,
+    isPostSuccess: PropTypes.bool,
+    isPostError: PropTypes.bool,
+    startYear: PropTypes.any,
+    startMonth: PropTypes.any,
+    startDate: PropTypes.any
+  }),
+  actionsMonthly: PropTypes.shape({
+    fetchMonthlyData: PropTypes.func
+  }),
   del: PropTypes.shape({
     isDel: PropTypes.bool,
     isDelSuccess: PropTypes.bool,

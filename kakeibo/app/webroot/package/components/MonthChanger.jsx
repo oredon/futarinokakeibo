@@ -82,18 +82,18 @@ class MonthChanger extends Component {
 }
 
 MonthChanger.propTypes = {
-	monthly: PropTypes.shape({
-		data: PropTypes.object,
-		isPosting: PropTypes.bool.isRequired,
-		isPostSuccess: PropTypes.bool.isRequired,
-		isPostError: PropTypes.bool.isRequired,
-		startYear: PropTypes.any.isRequired,
-		startMonth: PropTypes.any.isRequired,
-		startDate: PropTypes.any.isRequired
-	}),
-	actionsMonthly: PropTypes.shape({
-		fetchMonthlyData: PropTypes.func.isRequired
-	})
+  monthly: PropTypes.shape({
+    data: PropTypes.object,
+    isPosting: PropTypes.bool.isRequired,
+    isPostSuccess: PropTypes.bool.isRequired,
+    isPostError: PropTypes.bool.isRequired,
+    startYear: PropTypes.any.isRequired,
+    startMonth: PropTypes.any.isRequired,
+    startDate: PropTypes.any.isRequired
+  }),
+  actionsMonthly: PropTypes.shape({
+    fetchMonthlyData: PropTypes.func.isRequired
+  })
 };
 
 export default MonthChanger;

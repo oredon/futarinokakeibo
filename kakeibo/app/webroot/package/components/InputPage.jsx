@@ -301,7 +301,7 @@ InputPage.propTypes = {
   actionsEdit: PropTypes.shape({
     finalizeSend: PropTypes.func.isRequired,
     getData: PropTypes.func.isRequired,
-    sendData: PropTypes.func.isRequired,
+    sendData: PropTypes.func.isRequired
   })
 };
 

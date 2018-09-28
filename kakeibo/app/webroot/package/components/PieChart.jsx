@@ -46,9 +46,9 @@ class PieChart extends Component {
   }
 
   /**
-	 * AJAXデータをコンフィグにセット
-	 * @param  {object} res AJAXで取得したグラフデータ
-	 */
+   * AJAXデータをコンフィグにセット
+   * @param  {object} res AJAXで取得したグラフデータ
+   */
   mergeByPropMonthlyData(res){
     pieChartConfigTmpl.subtitle = {
       text: '旦那: '+ this.props.monthly.data.danna +"円 / 嫁: " + this.props.monthly.data.yome + "円"
@@ -78,15 +78,15 @@ class PieChart extends Component {
 }
 
 PieChart.propTypes = {
-	monthly: PropTypes.shape({
-		data: PropTypes.object,
-		isPosting: PropTypes.bool.isRequired,
-		isPostSuccess: PropTypes.bool.isRequired,
-		isPostError: PropTypes.bool.isRequired,
-		startYear: PropTypes.any.isRequired,
-		startMonth: PropTypes.any.isRequired,
-		startDate: PropTypes.any.isRequired
-	})
+  monthly: PropTypes.shape({
+    data: PropTypes.object,
+    isPosting: PropTypes.bool.isRequired,
+    isPostSuccess: PropTypes.bool.isRequired,
+    isPostError: PropTypes.bool.isRequired,
+    startYear: PropTypes.any.isRequired,
+    startMonth: PropTypes.any.isRequired,
+    startDate: PropTypes.any.isRequired
+  })
 };
 
 export default PieChart;
