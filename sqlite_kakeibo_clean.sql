@@ -26,4 +26,4 @@ CREATE TABLE `users` (
   `modified` datetime DEFAULT NULL
 );
 
-INSERT INTO `users` VALUES (1,'admin','ec9957da2bec5b66621afba79460fd98fba8c06c','2015-11-15 18:26:21','2015-11-15 18:26:21');
+INSERT INTO `users` VALUES (1,'admin','ec9957da2bec5b66621afba79460fd98fba8c06c','2018-09-15 18:26:21','2018-09-15 18:26:21');
